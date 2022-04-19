@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="bazar.xsl"?>
+<bazar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="autobazar.xsd">
+    
+    <!-- 25 elementů -->
+    <!-- 5 atributů-->
+    <!-- 11 Entit-->
+    
+    <!-- Entita 1-->
+    <automobil kategorie="Střední třída" leasing="Ne" pujcovna="Ne" puvod="Česká Republika">
+        <vyrobce>Škoda</vyrobce>
+        <rok_vyroby>2022</rok_vyroby>
+        <najeto>7</najeto>
+        <rada>4</rada>
+        <model>Octavia</model>
+        <barva>Modrá</barva>
+        <palivo>Nafta</palivo>
+        <spotreba_paliva>6.3</spotreba_paliva>
+        <objem_nadrze>55</objem_nadrze>
+        <vykon_motoru>110</vykon_motoru>
+        <obsah_motoru>2.0</obsah_motoru>
+        <klimatizace>Ano</klimatizace>
+        <prevodovka>Manuální</prevodovka>
+        <rezervni_kolo>Ne</rezervni_kolo>
+        <povinna_vybava>Ano</povinna_vybava>
+        <pocet_dveri>5</pocet_dveri>
+        <cena>689999</cena>
+    </automobil>
+    <!-- Entita 2 -->
+    <automobil kategorie="Luxusní vozy" leasing="Ne" pujcovna="Ano" puvod="Rakousko">
+        <vyrobce>BWM</vyrobce>
+        <rok_vyroby>2021</rok_vyroby>
+        <najeto>12555</najeto>
+        <rada>5</rada>
+        <model>520d</model>
+        <barva>Černá metalíza</barva>
+        <palivo>Nafta</palivo>
+        <spotreba_paliva>8.1</spotreba_paliva>
+        <objem_nadrze>65</objem_nadrze>
+        <vykon_motoru>140</vykon_motoru>
+        <obsah_motoru>2.0</obsah_motoru>
+        <klimatizace>Ano</klimatizace>
+        <prevodovka>Automatická</prevodovka>
+        <rezervni_kolo>Ano</rezervni_kolo>
+        <povinna_vybava>Ano</povinna_vybava>
+        <pocet_dveri>5</pocet_dveri>
+        <cena>999999</cena>
+    </automobil>
+    <!-- Entita 3-->
+     <automobil kategorie="Nižší střední třída" leasing="Ano" pujcovna="Ne" puvod="Česká Republika">
+        <vyrobce>Škoda</vyrobce>
+        <rok_vyroby>2009</rok_vyroby>
+        <najeto>156898</najeto>
+        <rada>2</rada>
+        <model>Fabia</model>
+        <barva>Bílá</barva>
+        <palivo>Benzín</palivo>
+        <spotreba_paliva>4.2</spotreba_paliva>
+        <objem_nadrze>45</objem_nadrze>
+        <vykon_motoru>66</vykon_motoru>
+        <obsah_motoru>1.0</obsah_motoru>
+        <klimatizace>Ano</klimatizace>
+        <prevodovka>Manuální</prevodovka>
+        <rezervni_kolo>Ne</rezervni_kolo>
+        <povinna_vybava>Ne</povinna_vybava>
+        <pocet_dveri>5</pocet_dveri>
+        <cena>165999</cena>
+    </automobil>
+    <!-- Entita 4-->
+     <automobil kategorie="Kabriolet" leasing="Ne" pujcovna="Ano" puvod="Belgie">
+        <vyrobce>BMW</vyrobce>
+        <rok_vyroby>2005</rok_vyroby>
+        <najeto>29888</najeto>
+        <rada>Z</rada>
+        <model>Z4</model>
+        <barva>Černá</barva>
+        <palivo>Benzín</palivo>
+        <spotreba_paliva>7.8</spotreba_paliva>
+        <objem_nadrze>50</objem_nadrze>
+        <vykon_motoru>81</vykon_motoru>
+        <obsah_motoru>1.8</obsah_motoru>
+        <klimatizace>Ano</klimatizace>
+        <prevodovka>Manuální</prevodovka>
+        <rezervni_kolo>Ne</rezervni_kolo>
+        <povinna_vybava>Ano</povinna_vybava>
+        <pocet_dveri>3</pocet_dveri>
+        <cena>385999</cena>
+    </automobil>
+    <!-- Entita 5-->
+     <automobil kategorie="stredni_trida" leasing="Ano" pujcovna="Ne" puvod="Česká Republika">
+        <vyrobce>Škoda</vyrobce>
+        <rok_vyroby>2013</rok_vyroby>
+        <najeto>299500</najeto>
+        <rada>3</rada>
+        <model>Octavia</model>
+        <barva>Červená</barva>
+        <palivo>Nafta</palivo>
+        <spotreba_paliva>4.9</spotreba_paliva>
+        <objem_nadrze>55</objem_nadrze>
+        <vykon_motoru>81</vykon_motoru>
+        <obsah_motoru>1.6</obsah_motoru>
+        <klimatizace>Ano</klimatizace>
+        <prevodovka>Manuální</prevodovka>
+        <rezervni_kolo>Ne</rezervni_kolo>
+        <povinna_vybava>Ano</povinna_vybava>
+        <pocet_dveri>5</pocet_dveri>
+        <cena>309999</cena>
+    </automobil>
+    <!-- Entita 6-->
+     <automobil kategorie="stredni_trida" leasing="Ne" pujcovna="Ne" puvod="Německo">
+        <vyrobce>Volkswagen</vyrobce>
+        <rok_vyroby>2008</rok_vyroby>
+        <najeto>147888</najeto>
+        <rada>6</rada>
+        <model>Golf</model>
+        <barva>Stříbrná</barva>
+        <palivo>Benzín</palivo>
+        <spotreba_paliva>10</spotreba_paliva>
+        <objem_nadrze>60</objem_nadrze>
+        <vykon_motoru>110</vykon_motoru>
+        <obsah_motoru>2.0</obsah_motoru>
+        <klimatizace>Ano</klimatizace>
+        <prevodovka>Automatická</prevodovka>
+        <rezervni_kolo>Ano</rezervni_kolo>
+        <povinna_vybava>Ano</povinna_vybava>
+        <pocet_dveri>5</pocet_dveri>
+        <cena>390000</cena>
+    </automobil>
+    <!-- Entita 7-->
+    <prives_za_automobil stav="Zánovní">
+        <znacka>Agados</znacka>
+        <rok_vyroby>2022</rok_vyroby>
+        <typ>Handy 3</typ>
+        <hmotnost>750</hmotnost>
+        <brzdena_naprava>Ne</brzdena_naprava>
+        <uzitecna_hmotnost>620</uzitecna_hmotnost>
+        <max_rychlost>130</max_rychlost>
+        <cena>17690</cena>
+    </prives_za_automobil>
+    <!-- Entita 8-->
+    <prives_za_automobil stav="Použité">
+        <znacka>Agados</znacka>
+        <rok_vyroby>2020</rok_vyroby>
+        <typ>Handy 20</typ>
+        <hmotnost>750</hmotnost>
+        <brzdena_naprava>Ne</brzdena_naprava>
+        <uzitecna_hmotnost>630</uzitecna_hmotnost>
+        <max_rychlost>100</max_rychlost>
+        <cena>14990</cena>
+    </prives_za_automobil>
+    <!-- Entita 9-->
+    <prives_za_automobil stav="Zánovní">
+        <znacka>Martz</znacka>
+        <rok_vyroby>2022</rok_vyroby>
+        <typ>Basic 200 Plus</typ>
+        <hmotnost>750</hmotnost>
+        <brzdena_naprava>Ne</brzdena_naprava>
+        <uzitecna_hmotnost>625</uzitecna_hmotnost>
+        <max_rychlost>110</max_rychlost>
+        <cena>15615</cena>
+    </prives_za_automobil>
+    <!-- Entita 10-->
+    <prives_za_automobil stav="Použité">
+        <znacka>Martz</znacka>
+        <rok_vyroby>2020</rok_vyroby>
+        <typ>MAXI 264/2</typ>
+        <hmotnost>750</hmotnost>
+        <brzdena_naprava>Ano</brzdena_naprava>
+        <uzitecna_hmotnost>600</uzitecna_hmotnost>
+        <max_rychlost>130</max_rychlost>
+        <cena>33555</cena>
+    </prives_za_automobil>
+    <!-- Entita 11 -->
+    <prives_za_automobil stav="Použité">
+        <znacka>Agados</znacka>
+        <rok_vyroby>2017</rok_vyroby>
+        <typ>Handy 21</typ>
+        <hmotnost>750</hmotnost>
+        <brzdena_naprava>Ne</brzdena_naprava>
+        <uzitecna_hmotnost>669</uzitecna_hmotnost>
+        <max_rychlost>130</max_rychlost>
+        <cena>8599</cena>
+    </prives_za_automobil>
+    
+    </bazar>

@@ -1,0 +1,83 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="bazar">
+         <xs:complexType>
+            <xs:sequence>
+                <xs:element name="automobil" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="vyrobce" type="xs:string"/>
+                            <xs:element name="rok_vyroby" type="rokvyroby"/>
+                            <xs:element name="najeto" type="xs:integer"/>
+                            <xs:element name="rada" type="xs:string"/>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="barva" type="xs:string"/>
+                            <xs:group ref="palivova_soustava"/>
+                            <xs:element name="vykon_motoru" type="xs:integer"/>
+                            <xs:element name="obsah_motoru" type="xs:float"/>
+                            <xs:element name="klimatizace" type="rozhodovani"/>
+                            <xs:element name="prevodovka" type="prevodovka"/>
+                            <xs:element name="rezervni_kolo" type="rozhodovani"/>
+                            <xs:element name="povinna_vybava" type="rozhodovani"/>
+                            <xs:element name="pocet_dveri" type="xs:integer"/>
+                            <xs:element name="cena" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="kategorie" type="xs:string"/>
+                        <xs:attribute name="leasing" type="rozhodovani"/>
+                        <xs:attribute name="pujcovna" type="rozhodovani"/>
+                        <xs:attribute name="puvod" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="prives_za_automobil" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="znacka" type="xs:string"/>
+                            <xs:element name="rok_vyroby" type="rokvyroby"/>
+                            <xs:element name="typ" type="xs:string"/>
+                            <xs:element name="hmotnost" type="xs:integer"/>
+                            <xs:element name="brzdena_naprava" type="rozhodovani"/>
+                            <xs:element name="uzitecna_hmotnost" type="xs:integer"/>
+                            <xs:element name="max_rychlost" type="xs:integer"/>
+                            <xs:element name="cena" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="stav" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+                 </xs:sequence>
+                 </xs:complexType>
+    </xs:element>
+
+    <!-- Vlastní datové typy -->
+        <xs:simpleType name="rozhodovani">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Ano"/>
+                <xs:enumeration value="Ne"/>
+            </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType name="rokvyroby">
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="1999"/>
+                <xs:maxInclusive value="2022"/>
+            </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType name="palivo">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Nafta"/>
+                <xs:enumeration value="Benzín"/>
+                <xs:enumeration value="Elektřina"/>
+            </xs:restriction>
+        </xs:simpleType>
+        <xs:simpleType name="prevodovka">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Manuální"/>
+                <xs:enumeration value="Automatická"/>
+            </xs:restriction>
+        </xs:simpleType>
+
+        <xs:group name="palivova_soustava">
+            <xs:sequence>
+                <xs:element name="palivo" type="palivo"/>
+                <xs:element name="spotreba_paliva" type="xs:float"/>
+                <xs:element name="objem_nadrze" type="xs:integer"/>
+            </xs:sequence>
+        </xs:group>
+</xs:schema>
